@@ -49,7 +49,10 @@ export interface INestjsxResQuery<T> {
   cache?: 0;
 }
 
-export type INestjsxResQueryResult<T> = T[];
+export interface INestjsxResQueryResult<T> {
+  total: number;
+  list: T[];
+}
 
 export interface INestjsxResGet {
 }
